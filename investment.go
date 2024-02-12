@@ -30,6 +30,7 @@ func main() {
 		return
 	}
 
+	// calculate the future values
 	var futureValue = investmentAmount * math.Pow(1+expectedReturn/100, years)
 	var realFutureValue = futureValue * math.Pow(1+inflationRate/100, years)
 
